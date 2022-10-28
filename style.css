@@ -182,25 +182,57 @@ footer {
 .footer-text {
   color: #fff;
 }
-/* すべての画面サイズで適用される設定 */
-.social i {
-  color:black;
-}
-/* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
-@media screen and (max-width:1024px) {
-  .social i {
-    color: green;
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
   }
-}
-/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-@media screen and (max-width:768px) {
-  .social i {
-    color: red;
+  .nav-list {
+    width: 100%;
   }
-}
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width:425px) {
-  .social i {
-    color: blue;
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .social {
+    display: none;
+  }
+  .main-visual-content {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    display: block;
+  }
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-box {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar-contents {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 3px;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4px;
+  }
+  .pagination {
+    margin-bottom: 50px;
   }
 }
